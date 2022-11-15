@@ -14,7 +14,8 @@
 // }
 // greet(prompt("Enter a name: "));
 
-let greet = (name) => {
-    console.log(`Hello ${name}!`)
+let greet = (name, time = 'Day') => {
+    console.log(`Hello ${name}! Have a good ${time}`)
 }
-greet(prompt("Enter a name: "))
+greet(prompt("Enter a name: "), "Night")
+   
