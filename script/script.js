@@ -14,8 +14,22 @@
 // }
 // greet(prompt("Enter a name: "));
 
-let greet = (name, time = 'Day') => {
-    console.log(`Hello ${name}! Have a good ${time}`)
-}
-greet(prompt("Enter a name: "), "Night")
+// let greet = (name, time = 'Day') => {
+//     console.log(`Hello ${name}! Have a good ${time}`)
+// }
+// greet(prompt("Enter a name: "), "Night")
    
+
+const unorderedListElement = document.querySelector(".shopping")
+
+function populateList(list){
+    for (let l = 0; l < list.length; l++){
+        console.log(list[l]);
+        const listItemElement = document.createElement("li");
+        listItemElement.textContent = list[l];
+        unorderedListElement.append(listItemElement);
+    }
+}
+let shoppingList = ["Cheese", "Ham", "Bread", "Green Pepper", "Milk", "Coffee"];
+
+populateList(shoppingList);
